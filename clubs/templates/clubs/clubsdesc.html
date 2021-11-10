@@ -1,0 +1,42 @@
+{% extends 'clubs/basic.html' %}
+
+{% block title%} {{group.group_name}} - My Awesome Cart{% endblock %}
+{% block body %}
+<br>
+    <!--Slideshow starts here -->
+ <div style="background-color: #004f99;" class="jumbotron p-8 p-md-4 text-white rounded bg-darkblue">
+    <div class="col-md-4 px-0">
+      <h1 class="display-3 " style="text-align:center;">{{group.group_name}} Club</h1>
+    </div>
+  </div>
+
+<div class="container my-4">
+    <div class="row">
+    <div class="col-md-4">
+    <div class="row">
+        <img src="/media/{{group.image}}" width="353px" height="400px">
+    </div>
+
+
+    </div>
+
+    <div class="col-md-8">
+        <b> <h5>{{group.group_name}}</h5> </b>
+        <p>{{group.desc}}</p>
+        <p>{{group.detaileddesc}}</p>
+
+
+    </div>
+    </div>
+    <br> <br>
+     <div class="row">
+         <p>Coordinator Name: <b>{{group.coordinator}}</b></p>
+        </div>
+
+
+</div>
+
+
+
+
+{% endblock %}
